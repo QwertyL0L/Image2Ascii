@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image to ASCII Art Converter</title>
+    <!-- Include CSS for light and dark mode -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body class="dark-mode">
+    <div class="container">
+      <header>
+        <h1>Image 2 Ascii</h1>
+        <nav>
+          <button class="toggle-btn" onclick="toggleMode()">BG Toggle</button>
+        </nav>
+      </header>
+
+      <main>
+        <form method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="file">Upload an image:</label>
+            <input type="file" id="file" name="file">
+          </div>
+					<center>
+						<button class="btn" type="submit">Convert</button>
+					</center>
+        </form>
+      </main>
+    </div>
+
+    <!-- Include JavaScript to toggle the color theme -->
+    <script>
+      function toggleMode() {
+        var body = document.querySelector('body');
+        body.classList.toggle('light-mode');
+        body.classList.toggle('dark-mode');
+      }
+    </script>
+  </body>
+</html>
