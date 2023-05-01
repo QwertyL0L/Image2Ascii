@@ -1,0 +1,1 @@
+images will be stored in this folder for processing (you can delete this .txt file btw)
