@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Output</title>
+    <!-- Add CSS to control the color theme -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body class="dark-mode">
+    <div class="container">
+      <header>
+        <h1>Here Is Your Result </h1>
+				<h2>   (zoom out for best results btw)</h2>
+        <nav>
+          <button class="toggle-btn" onclick="toggleMode()">BG Toggle</button>
+        </nav>
+      </header>
+
+      <main>
+        <pre class="ascii-art">{{ ascii_art | safe }}</pre>
+      </main>
+    </div>
+
+    <!-- Include JavaScript to toggle the color theme -->
+    <script>
+      function toggleMode() {
+        var body = document.querySelector('body');
+        body.classList.toggle('light-mode');
+        body.classList.toggle('dark-mode');
+      }
+    </script>
+  </body>
+</html>
