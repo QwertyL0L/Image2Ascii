@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  }
+  
+  .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  }
+  
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  }
+  
+  nav {
+  display: flex;
+  justify-content: flex-end;
+  }
+  
+  .toggle-btn {
+  padding: 0.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+  background-color: #f3f3f3;
+  }
+  
+  main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .form-group {
+  margin-bottom: 1rem;
+  }
+  
+  label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  }
+  
+  input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fff;
+  }
+  
+  .btn {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+  background-color: #0069d9;
+  }
+  
+  .light-mode {
+  background-color: #fff;
+  }
+  
+  .light-mode body {
+  color: #333;
+  }
+  
+  .light-mode input[type="file"] {
+  background-color: #fff;
+  }
+  
+  .dark-mode {
+  background-color: #333;
+  color: #fff;
+  }
+  
+  .dark-mode body {
+  color: #fff;
+  }
+  
+  .dark-mode input[type="file"] {
+  background-color: #444;
+  }
+  
+  .dark-mode .btn {
+  background-color: #1f1f1f;
+  }
+  
+  .dark-mode .toggle-btn {
+  color: #fff;
+  }
+  
+  .dark-mode .toggle-btn:hover {
+  background-color: #444;
+  }
